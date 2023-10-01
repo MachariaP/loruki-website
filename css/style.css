@@ -1,0 +1,147 @@
+/* Importing the 'Lato' font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/* Global variable definitions */
+:root {
+  --primary-color: #047aed;      /* Define primary color */
+  --secondary-color: #1c3fa8;    /* Define secondary color */
+  --dark-color: #002240;         /* Define dark color */
+  --light-color: #f4f4f4;        /* Define light color */
+  --success-color: #5cb85c;      /* Define success color */
+  --error-color: #d9534f;        /* Define error color */
+}
+
+/* Resetting default styles for all elements */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/* Body styles */
+body {
+  font-family: 'Lato', sans-serif; /* Set default font family */
+  color: #333;                    /* Set default text color */
+  line-height: 1.6;               /* Set default line height */
+}
+
+/* List styles */
+ul {
+  list-style-type: none; /* Remove default list styles */
+}
+
+/* Anchor styles */
+a {
+  text-decoration: none; /* Remove default text decoration for links */
+  color: #333;           /* Set default link color */
+}
+
+/* Heading styles */
+h1,
+h2 {
+  font-weight: 300;     /* Set font weight for headings */
+  line-height: 1.2;     /* Set line height for headings */
+  margin: 10px 0;       /* Set margin for headings */
+}
+
+/* Paragraph styles */
+p {
+  margin: 10px 0; /* Set margin for paragraphs */
+}
+
+/* Image styles */
+img {
+  width: 100%; /* Make images responsive within their containers */
+}
+
+/* Code and pre styles */
+code,
+pre {
+  background: #333; /* Set background color for code blocks and preformatted text */
+  color: #fff;      /* Set text color for code blocks and preformatted text */
+  padding: 10px;    /* Set padding for code blocks and preformatted text */
+}
+
+/* Hidden class for visibility */
+.hidden {
+  visibility: hidden;
+  height: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: var(--primary-color); /* Set background color for the navbar */
+  color: #fff;                            /* Set text color for the navbar */
+  height: 70px;                           /* Set height for the navbar */
+}
+
+/* Navbar list styles */
+.navbar ul {
+  display: flex; /* Display list items as a flex container */
+}
+
+/* Navbar link styles */
+.navbar a {
+  color: #fff;      /* Set text color for navbar links */
+  padding: 10px;    /* Set padding for navbar links */
+  margin: 0 5px;    /* Set margin for navbar links */
+}
+
+/* Navbar link hover effect */
+.navbar ul a:hover {
+  border-bottom: 2px #fff solid; /* Add a border-bottom on hover */
+}
+
+/* Flex container for navbar */
+.navbar .flex {
+  justify-content: space-between; /* Align items with space-between distribution */
+}
+
+/* Showcase section styles */
+.showcase {
+  height: 400px;                   /* Set height for the showcase section */
+  background-color: var(--primary-color); /* Set background color for the showcase section */
+  color: #fff;                    /* Set text color for the showcase section */
+  position: relative;             /* Set position to relative for absolute positioning within */
+}
+
+/* Showcase heading styles */
+.showcase h1 {
+  font-size: 40px; /* Set font size for the showcase heading */
+}
+
+/* Showcase paragraph styles */
+.showcase p {
+  margin: 20px 0; /* Set margin for paragraphs within the showcase */
+}
+
+/* Grid container within the showcase */
+.showcase .grid {
+  overflow: visible;           /* Allow content overflow */
+  grid-template-columns: 55% auto; /* Set grid template columns */
+  gap: 30px;                   /* Set gap between grid items */
+}
+
+/* Animation for text in the showcase */
+.showcase-text {
+  animation: slideInFromLeft 1s ease-in; /* Apply slide-in animation from the left */
+}
+
+/* Showcase form styles */
+.showcase-form {
+  position: relative;          /* Set position to relative for absolute positioning within */
+  top: 60px;                   /* Set top position */
+  height: 350px;               /* Set height for the showcase form */
+  width: 400px;                /* Set width for the showcase form */
+  padding: 40px;               /* Set padding for the showcase form */
+  z-index: 100;                /* Set z-index for stacking order */
+  justify-self: flex-end;      /* Align form to the end in flex container */
+  animation: slideInFromRight 1s ease-in; /* Apply slide-in animation from the right */
+}
+
+/* Styles for form controls within the showcase form */
+.showcase-form .form-control {
+  margin: 30px 0; /* Set margin for form controls */
+}
+
+/* Input styles for text and email fields within the showcase form
